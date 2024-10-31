@@ -5,13 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    tools:layout_editor_absoluteX="4dp"
-    tools:layout_editor_absoluteY="79dp">
+    tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="16dp"
@@ -27,30 +25,39 @@
             android:rowCount="3"
             android:useDefaultMargins="true">
 
+            <!-- Updated Button IDs -->
             <Button
-                android:id="@+id/button12"
+                android:id="@+id/button00"
                 android:layout_width="match_parent"
                 android:layout_height="82dp"
                 android:backgroundTint="#CAC6C6"
-                android:insetLeft="0dp"
-                android:insetTop="0dp"
-                android:insetRight="0dp"
                 android:insetBottom="0dp"
-                android:text="X"
+                android:onClick="onButtonClick"
+                android:text="x"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:textColor="#000000"
                 app:cornerRadius="0dp" />
 
             <Button
-                android:id="@+id/button11"
+                android:id="@+id/button01"
                 android:layout_width="match_parent"
                 android:layout_height="82dp"
                 android:backgroundTint="#CAC6C6"
-                android:insetLeft="0dp"
-                android:insetTop="0dp"
-                android:insetRight="0dp"
                 android:insetBottom="0dp"
-                android:text="X"
+                android:onClick="onButtonClick"
+                android:text="x"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+                android:textColor="#000000"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/button02"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:backgroundTint="#CAC6C6"
+                android:insetBottom="0dp"
+                android:onClick="onButtonClick"
+                android:text="x"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:textColor="#000000"
                 app:cornerRadius="0dp" />
@@ -60,99 +67,72 @@
                 android:layout_width="match_parent"
                 android:layout_height="82dp"
                 android:backgroundTint="#CAC6C6"
-                android:insetLeft="0dp"
-                android:insetTop="0dp"
-                android:insetRight="0dp"
                 android:insetBottom="0dp"
-                android:text="X"
+                android:onClick="onButtonClick"
+                android:text="x"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:textColor="#000000"
                 app:cornerRadius="0dp" />
 
             <Button
-                android:id="@+id/button9"
+                android:id="@+id/button11"
                 android:layout_width="match_parent"
                 android:layout_height="82dp"
                 android:backgroundTint="#CAC6C6"
-                android:insetLeft="0dp"
-                android:insetTop="0dp"
-                android:insetRight="0dp"
                 android:insetBottom="0dp"
-                android:text="X"
+                android:onClick="onButtonClick"
+                android:text="x"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:textColor="#000000"
                 app:cornerRadius="0dp" />
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/button12"
                 android:layout_width="match_parent"
                 android:layout_height="82dp"
                 android:backgroundTint="#CAC6C6"
-                android:insetLeft="0dp"
-                android:insetTop="0dp"
-                android:insetRight="0dp"
                 android:insetBottom="0dp"
-                android:text="X"
+                android:onClick="onButtonClick"
+                android:text="x"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:textColor="#000000"
                 app:cornerRadius="0dp" />
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/button20"
                 android:layout_width="match_parent"
                 android:layout_height="82dp"
                 android:backgroundTint="#CAC6C6"
-                android:insetLeft="0dp"
-                android:insetTop="0dp"
-                android:insetRight="0dp"
                 android:insetBottom="0dp"
-                android:text="X"
+                android:onClick="onButtonClick"
+                android:text="x"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:textColor="#000000"
                 app:cornerRadius="0dp" />
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/button21"
                 android:layout_width="match_parent"
                 android:layout_height="82dp"
                 android:backgroundTint="#CAC6C6"
-                android:insetLeft="0dp"
-                android:insetTop="0dp"
-                android:insetRight="0dp"
                 android:insetBottom="0dp"
-                android:text="X"
+                android:onClick="onButtonClick"
+                android:text="x"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:textColor="#000000"
                 app:cornerRadius="0dp" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/button22"
                 android:layout_width="match_parent"
                 android:layout_height="82dp"
                 android:backgroundTint="#CAC6C6"
-                android:insetLeft="0dp"
-                android:insetTop="0dp"
-                android:insetRight="0dp"
                 android:insetBottom="0dp"
-                android:text="X"
+                android:onClick="onButtonClick"
+                android:text="x"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:textColor="#000000"
                 app:cornerRadius="0dp" />
-
-            <Button
-                android:id="@+id/button"
-                android:layout_width="match_parent"
-                android:layout_height="82dp"
-                android:backgroundTint="#CAC6C6"
-                android:insetLeft="0dp"
-                android:insetTop="0dp"
-                android:insetRight="0dp"
-                android:insetBottom="0dp"
-                android:text="X"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-                android:textColor="#000000"
-                app:cornerRadius="0dp" />
-
         </GridLayout>
 
         <TextView
@@ -161,7 +141,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:paddingBottom="20dp"
-            android:text="Plays X's Turn"
+            android:text="Player X's Turn"
             android:textSize="20sp" />
 
         <Button
@@ -169,13 +149,9 @@
             android:layout_width="313dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#CAC6C6"
+            android:onClick="resetGame"
             android:text="New Game"
             android:textColor="#000000"
-            android:textSize="34sp"
-            app:cornerRadius="0dp" />
-
+            android:textSize="34sp" />
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
