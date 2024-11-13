@@ -33,7 +33,6 @@
                 android:backgroundTint="#CAC6C6"
                 android:insetBottom="0dp"
                 android:onClick="onButtonClick"
-                android:text="x"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:textColor="#000000"
                 app:cornerRadius="0dp" />
@@ -45,7 +44,6 @@
                 android:backgroundTint="#CAC6C6"
                 android:insetBottom="0dp"
                 android:onClick="onButtonClick"
-                android:text="x"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:textColor="#000000"
                 app:cornerRadius="0dp" />
@@ -57,7 +55,6 @@
                 android:backgroundTint="#CAC6C6"
                 android:insetBottom="0dp"
                 android:onClick="onButtonClick"
-                android:text="x"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:textColor="#000000"
                 app:cornerRadius="0dp" />
@@ -69,7 +66,6 @@
                 android:backgroundTint="#CAC6C6"
                 android:insetBottom="0dp"
                 android:onClick="onButtonClick"
-                android:text="x"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:textColor="#000000"
                 app:cornerRadius="0dp" />
@@ -81,7 +77,6 @@
                 android:backgroundTint="#CAC6C6"
                 android:insetBottom="0dp"
                 android:onClick="onButtonClick"
-                android:text="x"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:textColor="#000000"
                 app:cornerRadius="0dp" />
@@ -93,7 +88,6 @@
                 android:backgroundTint="#CAC6C6"
                 android:insetBottom="0dp"
                 android:onClick="onButtonClick"
-                android:text="x"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:textColor="#000000"
                 app:cornerRadius="0dp" />
@@ -105,7 +99,6 @@
                 android:backgroundTint="#CAC6C6"
                 android:insetBottom="0dp"
                 android:onClick="onButtonClick"
-                android:text="x"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:textColor="#000000"
                 app:cornerRadius="0dp" />
@@ -117,7 +110,6 @@
                 android:backgroundTint="#CAC6C6"
                 android:insetBottom="0dp"
                 android:onClick="onButtonClick"
-                android:text="x"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:textColor="#000000"
                 app:cornerRadius="0dp" />
@@ -129,7 +121,6 @@
                 android:backgroundTint="#CAC6C6"
                 android:insetBottom="0dp"
                 android:onClick="onButtonClick"
-                android:text="x"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:textColor="#000000"
                 app:cornerRadius="0dp" />
