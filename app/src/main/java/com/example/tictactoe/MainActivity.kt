@@ -37,6 +37,35 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun checkForWin(): Boolean {
+        for (i in 0..2) {
+            if (buttons[i][0].text == buttons[i][1].text
+                    && buttons[i][1].text == buttons[i][2].text
+                    && buttons[i][0].text.isNotEmpty()) {
+                return true
+            }
+        }
+        for (i in 0..2) {
+            if (buttons[0][i].text == buttons[1][i].text
+                    && buttons[1][i].text == buttons[2][i].text
+                    && buttons[0][i].text.isNotEmpty()) {
+                return true
+            }
+        }
+
+        if (buttons[0][0].text == buttons[1][1].text
+                && buttons[1][1].text == buttons[2][2].text
+                && buttons[0][0].text.isNotEmpty()) {
+            return true
+        }
+        if (buttons[0][2].text == buttons[1][1].text
+                && buttons[1][1].text == buttons[2][0].text
+                && buttons[0][2].text.isNotEmpty()) {
+            return true
+        }
+        return false
+    }
+
     private fun initButton(row: Int, col: Int): Button {
         val button: Button = findViewById(resources.getIdentifier("button${row}${col}", "id", packageName))
         button.setOnClickListener {
@@ -50,9 +79,50 @@ class MainActivity : AppCompatActivity() {
         if (button.text.isNotEmpty()) {
             return
         }
-        button.text = playerTurn
-        playerTurn = if (playerTurn == "X") "O" else "X"
-        turnTextView.text = "Player $playerTurn's Turn"
+         button.text = playerTurn
+         if (checkForWin()) {
+             turnTextView.text = "Player $playerTurn wins!"
+             disableButtons(null)
+         }
+         else if (checkForTie()) {
+             turnTextView.text = "The Game is a Tie!"
+             disableButtons(null)
+         }
+         else {
+             playerTurn = if (playerTurn == "X") "O" else "X"
+             turnTextView.text = "Player $playerTurn's turn"
+         }
+    }
+
+    private fun checkForTie(): Boolean {
+        var count = 0
+        for (i in 0..2) {
+            for (j in 0..2) {
+                if (buttons[i][j].text.isNotEmpty()) {
+                    count++
+                }
+            }
+        }
+        if (count == 9) {
+            return true
+        }
+        return false
+    }
+
+    private fun disableButtons(view: View?) {
+        for (i in 0..2) {
+            for (j in 0..2) {
+                buttons[i][j].isEnabled = false
+            }
+        }
+    }
+
+    private fun enableButtons(view: View?) {
+        for (i in 0..2) {
+            for (j in 0..2) {
+                buttons[i][j].isEnabled = true
+            }
+        }
     }
 
      fun resetGame(view: View?) {
@@ -61,6 +131,7 @@ class MainActivity : AppCompatActivity() {
                 buttons[i][j].text = ""
             }
         }
+         enableButtons(null)
         playerTurn = "X"
         turnTextView.text = "Player X's Turn"
     }
